@@ -16,5 +16,25 @@ Password: changeme
 
 `curl --user elastic:changeme -X GET http://localhost:9200/`
 
+## Create an Index
 
+`curl --user elastic:changeme -XPUT 'localhost:9200/test?pretty' -H 'Content-Type: application/json' -d'
+{
+    "settings" : {
+        "index" : {
+            "number_of_shards" : 3, 
+            "number_of_replicas" : 2 
+        }
+    }
+}
+'`
+
+## Adding data
+
+`curl --user elastic:changeme -XPUT 'localhost:9200/test/data/1' -H 'Content-Type: application/json' -d'
+{
+    "hellouser" : "super trouper",
+    "message" : "trying out Elasticsearch"
+}
+'`
 
