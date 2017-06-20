@@ -45,3 +45,5 @@ Password: changeme
 ## Search
 
 `http://localhost:9200/_search?pretty=true&q=mysearchstring`
+
+more examples [here](https://github.com/u1i/elastic-search-getting-started)
