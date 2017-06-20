@@ -1,4 +1,4 @@
-# Getting started with Elastic Search
+# Getting started with [Elastic Search](https://github.com/elastic/elasticsearch)
 
 ## Run it with Docker
 
