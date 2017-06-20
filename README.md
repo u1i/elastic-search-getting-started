@@ -38,3 +38,10 @@ Password: changeme
 }
 '`
 
+## Show all documents in an index
+
+`http://localhost:9200/my-index/_search?pretty=true&q=*:*`
+
+## Search
+
+`http://localhost:9200/_search?pretty=true&q=mysearchstring`
