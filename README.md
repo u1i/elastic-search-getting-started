@@ -52,6 +52,10 @@ more examples [here](https://github.com/u1i/elastic-search-getting-started)
 
 get [docker-compose.yml](docker-compose.yml)
 
+### Check Cluster Health
+
+http://localhost:9200/_cluster/health
+
 ### Build the cluster, volumes and network
 `docker-compose up`
 
