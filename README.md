@@ -47,3 +47,16 @@ Password: changeme
 `http://localhost:9200/_search?pretty=true&q=mysearchstring`
 
 more examples [here](https://github.com/u1i/elastic-search-getting-started)
+
+## Elastic Search Cluster & Kibana with Docker Compose
+
+get [docker-compose.yml](docker-compose.yml)
+
+### Build the cluster, volumes and network
+`docker-compose up`
+
+### Run Kibana and link to Elastic Search
+
+`docker run -p 5601:5601 --link elasticsearch1 --network=elastic_esnet -d kibana`
+
+access at http://localhost:5601/
